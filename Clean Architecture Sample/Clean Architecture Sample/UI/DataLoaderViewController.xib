@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DataLoaderViewController" customModule="Clean_Architecture_Sample" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="2xn-v4-J0C" id="aN0-Jg-y3j"/>
+                <outlet property="view" destination="iN0-l3-epB" id="gYN-uS-ypo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2xn-v4-J0C">
+                    <rect key="frame" x="182" y="288.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="ZfB-Cl-4GK"/>
+                        <constraint firstAttribute="height" constant="50" id="yo3-6w-Hoc"/>
+                    </constraints>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5J6-Bf-KL0">
+                    <rect key="frame" x="186" y="354" width="42" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="rvr-qY-bWV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5J6-Bf-KL0" firstAttribute="centerX" secondItem="2xn-v4-J0C" secondAttribute="centerX" id="8Kl-9N-jaH"/>
+                <constraint firstItem="2xn-v4-J0C" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8Th-cH-iJP"/>
+                <constraint firstItem="5J6-Bf-KL0" firstAttribute="top" secondItem="2xn-v4-J0C" secondAttribute="bottom" constant="15.5" id="m4c-Sf-zoN"/>
+                <constraint firstItem="2xn-v4-J0C" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.7" id="plb-Wf-mAn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="115"/>
+        </view>
+    </objects>
+</document>
